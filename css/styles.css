@@ -377,7 +377,6 @@ img {
   display: block;
   width: 44px;
   height: 44px;
-  margin-bottom: 10px;
   border-radius: 50%;
 }
 /* ссилка */
@@ -418,7 +417,6 @@ img {
 /* Our clients (latest section) */
 .client-list {
   display: flex;
-  justify-content: space-between;
 }
 .client-item {
   display: flex;
@@ -426,6 +424,9 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
 }
 .client-link {
   display: flex;
@@ -442,6 +443,10 @@ img {
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
 /*Portfolio Work examples */
@@ -495,13 +500,11 @@ img {
 .footer {
   background-color: var(--accent-bgc);
   color: var(--title-text-color);
+  padding: 60px 0;
 }
 /* .footer-section {
   padding: 60px 0;
 } */
-.footer .container {
-  padding: 60px 0;
-}
 .footer-logo {
   display: inline-block;
   font-family: Raleway, sans-serif;
@@ -539,7 +542,6 @@ img {
 }
 .fs-list {
   display: flex;
-  justify-content: space-between;
 }
 .fs-item {
   display: flex;
@@ -549,6 +551,9 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.fs-item:not(:last-child) {
+  margin-right: 10px;
 }
 .fs-link {
   display: flex;
