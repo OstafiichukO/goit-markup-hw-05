@@ -43,7 +43,12 @@
             <!--Hero-->
             <section class="hero overlay section">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="btn primary">Заказать услугу</button>
+                <button class="btn primary" data-modal-open>Заказать услугу</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button type="button" class="close" data-modal-close>Закрыть</button>
+                        </div>
+                    </div>
             </section>
             <!--Features-->
             <section class="features section">
@@ -104,13 +109,29 @@
                     <h2 class="work title">Чем мы занимаемся</h2>
                     <ul class="img-list">
                         <li>
-                            <img src="./image/What_are_we_doing/box_1.webp" alt="Человек пишет програмный код на планшете" width="370" height="294">
+                            <div class="work-overlay">
+                                <img src="./image/What_are_we_doing/box_1.webp" alt="Человек пишет програмный код на планшете" width="370" height="294">
+                                <div class="overlay-thumb">
+                                    <p class="work-overlay-text">Десктопные приложения</p>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <img src="./image/What_are_we_doing/box_2.webp" alt="Человек держит телефон перед ноутбуком" width="370" height="294">
+                            <div class="work-overlay">
+                                <img src="./image/What_are_we_doing/box_2.webp" alt="Человек держит телефон перед ноутбуком" width="370" height="294">
+                                <div class="overlay-thumb">
+                                    <p class="work-overlay-text">Мобильные приложения</p>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <img src="./image/What_are_we_doing/box_3.webp" alt="Человек держит в руке планшет с палитрой цветов" width="370" height="294">
+                            <div class="work-overlay">
+                                <img src="./image/What_are_we_doing/box_3.webp" alt="Человек держит в руке планшет с палитрой цветов" width="370"
+                                    height="294">
+                                <div class="overlay-thumb">
+                                    <p class="work-overlay-text">Дизайнерские решения</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
