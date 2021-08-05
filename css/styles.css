@@ -113,6 +113,7 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  /* align-items: baseline; */
 }
 .auth-item {
   display: inline-block;
@@ -140,7 +141,7 @@ img {
 .location {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 .current {
@@ -159,9 +160,8 @@ img {
   color: var(--accent-color);
 }
 .contacts {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: var(--secondary-text-color);
   text-decoration: none;
   padding-top: 32px;
