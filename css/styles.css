@@ -234,14 +234,14 @@ img {
   height: 30px;
   top: 8px;
   right: 8px;
-  border: 1px solid red;
-  /* rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 0;
   background-color: #ffffff;
   cursor: pointer;
 }
 .close-icon {
+  object-position: center;
   fill: rgba(0, 0, 0, 1);
 }
 /* кнопки фильтров портфолио */
