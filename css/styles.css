@@ -150,7 +150,7 @@ img {
 .current::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   border-bottom: 2px solid var(--accent-color);
   border-radius: 2px;
